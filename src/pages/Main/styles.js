@@ -17,7 +17,6 @@ export const Form = styled.form`
   button {
     height: 55px;
     padding: 0 20px;
-    border: 0;
     border-radius: 3px;
   }
 
@@ -26,6 +25,7 @@ export const Form = styled.form`
     background: #fff;
     font-size: 18px;
     color: #444;
+    border: ${props => (props.withError ? '2px solid #F00' : 0 )}
   }
 
   button {
@@ -34,6 +34,7 @@ export const Form = styled.form`
     margin-left: 10px;
     font-size: 20px;
     font-weight: 700;
+    border: 0;
 
     &:hover {
       background-color: #52d89f;
